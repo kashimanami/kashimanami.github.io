@@ -1,4 +1,4 @@
-<a href="" target="_blank" rel="norefferrer">Go Self-introduction</a>
+<a href="https://kashimanami.github.io/" target="_blank">Go Self-introduction</a>
 ---
 Hello👋  
 I will introduce myself.
