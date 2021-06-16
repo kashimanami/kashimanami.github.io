@@ -1,1 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+	<link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
+	<title>Portfolio</title>
+</head>
+<body class="user_index">
+	<header>
+	</header>
+<section class="section js-section" data-section-name="section1">
+  <div class="section-content">
+    <h2>Introduce</h2>
+    <p>Hello<i class="far fa-smile-wink"></i></br>
+       Name:Nami Kashima</br>
+       Old:24</br>
+       Job:engineer</br>
+       Main Language:Japanese</br>
+       I'm studying to speak English.
+       </p>
+  </div>
+</section>
+<section class="section section-blue js-section" data-section-name="section2">
+  <div class="section-content">
+    <h2>History</h2>
+    <h3>study in school</h3>
+    <p>I studied Sociology.</br>
+    The theme of Graduation thesis is 'Lonely and Solitude'</p>
+    <h3>work in ZEXIS</h3>
+    <p>...</p>
+    <h3>now</h3>
+    <p>...</p>
+    <h3>future</h3>
+    <p>...</p>
+  </div>
+</section>
+<section class="section js-section" data-section-name="section3">
+  <div class="section-content">
+    <h2>Read Book</h2>
+    <div class="slide">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src=""></div>
+							<div class="swiper-slide"><img src=""></div>
+							<div class="swiper-slide"><img src=""></div>
+							<div class="swiper-slide"><img src=""></div>
+						</div>
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+				</div>
+  </div>
+</section>
+<section class="section section-blue js-section" data-section-name="section4">
+  <div class="section-content">
+    <h2>Fun</h2>
+    <p>My hobby is cosplay.I'm enjoying it from 5 years old.</p>
+        <div class="slide">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src=""></div>
+							<div class="swiper-slide"><img src=""></div>
+							<div class="swiper-slide"><img src=""></div>
+							<div class="swiper-slide"><img src=""></div>
+						</div>
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+				</div>
+  </div>
+  </div>
+</section>
+<section class="section js-section" data-section-name="section5">
+  <div class="section-content">
+    <h2>Contact</h2>
+    <p>gmail,git</p>
+  </div>
+</section>
 
+	<footer>
+		<p class="copyright"> Copyright 2021 nami73</p>
+	</footer>
+	
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+		});
+		</script>
+		<script>
+		var option = {
+  section : '.js-section',
+  easing: "swing",
+  scrollSpeed: 600,
+  scrollbars: true,
+};
+
+$(function() {
+  $.scrollify(option);
+});
+	</script>
+</body>
+</html>
