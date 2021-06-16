@@ -77,6 +77,45 @@ p {
 }
 /* ここまで */
 
+
+/* slide↓ */
+.swiper-button-prev {
+  background-image: none!important;
+}
+
+.swiper-button-prev:after {
+  content: ''!important;
+  display: bloc!importantk;
+  width: 15px!important;
+  height: 15px!important;
+  border-top: 5px solid #094067!important;
+  border-left: 5px solid #094067!important;
+  -webkit-transform: rotate(-45deg)!important;
+  transform: rotate(-45deg)!important;
+  position: absolute!important;
+  top: 11px!important;
+  left: 13px!important;
+}
+
+.swiper-button-next {
+  background-image: none;
+}
+
+.swiper-button-next:after {
+  content: ''!important;
+  display: block!important;
+  width: 15px!important;
+  height: 15px!important;
+  border-top: 5px solid #094067!important;
+  border-right: 5px solid #094067!important;
+  -webkit-transform: rotate(45deg)!important;
+  transform: rotate(45deg)!important;
+  position: absolute!important;
+  top: 11px!important;
+  right: 15px!important;
+}
+/* ↑ */
+
 .contact .fa-large{
   font-size: xxx-large;
   color: #094067;
