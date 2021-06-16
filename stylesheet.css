@@ -1,0 +1,36 @@
+@CHARSET "UTF-8";
+
+.section {
+  width: 100%;
+  background-color: #fff;
+}
+
+.section-blue{
+  background-color: #d8eefe;
+}
+
+.section-content {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 40px 60px;
+  text-align: center;
+}
+
+h2 {
+  color: #094067;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+h3 {
+  color: #094067;
+}
+
+p {
+  color: #094067;
+}
+
+.copyright{
+  text-align: center;
+}
