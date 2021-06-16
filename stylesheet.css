@@ -14,6 +14,7 @@
   margin: 0 auto;
   padding: 40px 60px;
   text-align: center;
+  display: table;
 }
 
 h2 {
@@ -30,6 +31,51 @@ h3 {
 p {
   color: #094067;
 }
+
+
+.read-book .slide{
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+.read-book .slide img{
+  width: 300px;
+  height: 400px
+  margin: auto;
+}
+
+.read-book .swiper-pagination {
+  background-image: none!important;
+}
+
+.read-book .swiper-pagination{
+  bottom: -5px!important;
+}
+
+
+
+/* 後で調整 */
+.fun .slide{
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+.fun .slide img{
+  width: 300px;
+  height: 400px
+  margin: auto;
+}
+
+.fun .swiper-pagination {
+  background-image: none!important;
+}
+
+.fun .swiper-pagination{
+  bottom: -5px!important;
+}
+/* ここまで */
 
 .copyright{
   text-align: center;
