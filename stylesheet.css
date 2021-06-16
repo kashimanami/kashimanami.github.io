@@ -77,6 +77,10 @@ p {
 }
 /* ここまで */
 
+.contact i{
+  font-size: xxx-large;
+}
+
 .copyright{
   text-align: center;
 }
