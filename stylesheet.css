@@ -32,6 +32,11 @@ p {
   color: #094067;
 }
 
+.history .fa-large{
+  font-size: x-large;
+  color: #094067;
+  margin-left: 5px;
+}
 
 .read-book .slide{
   width: 400px;
