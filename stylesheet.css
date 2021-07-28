@@ -17,6 +17,11 @@
   display: table;
 }
 
+.section-content .read-comic{
+max-width: none;
+    display: unset;
+}
+
 h2 {
   color: #094067;
   &:first-child {
