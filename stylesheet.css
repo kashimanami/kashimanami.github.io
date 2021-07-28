@@ -275,6 +275,9 @@ p {
 .s_10 .accordion_one .accordion_inner .box_one {
   padding: 15px;
 }
+.s_10 .accordion_one .accordion_inner .box_one img{
+  width: 150px;
+}
 .s_10 .accordion_one .accordion_inner p.txt_a_ac {
   margin: 0;
 }
