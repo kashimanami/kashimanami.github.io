@@ -129,3 +129,13 @@ p {
 .copyright{
   text-align: center;
 }
+
+/* smart phone */
+@media screen and (max-width:480px) {
+ 
+	main {
+		width: 100%;
+	}
+ 
+}
+/* ↑ */
