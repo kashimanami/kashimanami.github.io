@@ -25,10 +25,11 @@ max-width: none;
 
 h2 {
   color: #00214d;
-  &:first-child {
+}
+
+h2:first-child {
     margin-top: 0;
   }
-}
 
 h3 {
   color: #00214d;
