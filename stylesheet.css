@@ -24,14 +24,14 @@ max-width: none;
 }
 
 h2 {
-  color: #094067;
+  color: #00214d;
   &:first-child {
     margin-top: 0;
   }
 }
 
 h3 {
-  color: #094067;
+  color: #00214d;
 }
 
 p {
