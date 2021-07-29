@@ -133,10 +133,15 @@ p {
 /* smart phone */
 @media screen and (max-width:480px) {
  
-	main {
-		width: 95%;
-		margin:0px;
+	body {
+	  width: 95%;
+	  margin:0px;
 	}
+	
+	.read-book .slide img {
+          width: 300px;
+          height: 400px;
+        }
  
 }
 /* ↑ */
