@@ -313,8 +313,8 @@ p {
 @media screen and (max-width:480px) {
  
 	body {
-		width: 95%;
-		margin:0px;
+		width: fit-content;
+    margin: 0;
 	}
 	.read-book .slide img {
     width: 300px;
