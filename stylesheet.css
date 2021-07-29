@@ -64,32 +64,7 @@ p {
   bottom: -5px!important;
 }
 
-
-
-/* 後で調整 */
-.fun .slide{
-  width: 400px;
-  height: 400px;
-  margin: auto;
-}
-
-.fun .slide img{
-  width: 300px;
-  height: 400px
-  margin: auto;
-}
-
-.fun .swiper-pagination {
-  background-image: none!important;
-}
-
-.fun .swiper-pagination{
-  bottom: -5px!important;
-}
-/* ここまで */
-
-
-/* slide↓ */
+/* Readed Books:swiper */
 .swiper-button-prev {
   background-image: none!important;
 }
@@ -129,8 +104,8 @@ p {
 .swiper-pagination-bullet-active{
   background:#00ebc7!important;
 }
-/* ↑ */
-/*accordion*/
+
+/* Favorite comics:accordion */
 .s_10 .accordion_area {
   max-width: 1024px;
   margin: 0 auto;
@@ -305,38 +280,36 @@ p {
   }
 }
 
-
-/* ↑ */
-/* modal */
+/* Cosplay,Drow:modal */
 .cosplay img{
-  width:300px;
-  height:400px;
+  width:150px;
+  height:200px;
 }
 .drow img{
-  width:300px;
-  height:400px;
+  width:150px;
+  height:200px;
 }
-/* ↑ */
+
+/* Contact */
 .contact .fa-large{
   font-size: xxx-large;
   color: #094067;
 }
 
+/* Footer */
 .copyright{
   text-align: center;
 }
 
-/* smart phone */
-@media screen and (max-width:480px) {
- 
+/* Smart phone */
+@media screen and (max-width:480px) { 
 	body {
 		width: fit-content;
-    margin: 0;
+    		margin: 0;
 	}
 	.read-book .slide img {
-    width: 300px;
-    height: 400px;
+    		width: 300px;
+    		height: 400px;
+	} 
 }
- 
-}
-/* ↑ */
+
