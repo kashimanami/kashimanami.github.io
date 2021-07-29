@@ -281,7 +281,7 @@ p {
 }
 
 /* Cosplay,Drow:modal */
-.cosplay img :hover {
+.cosplay img:hover {
 	opacity: 0.8;
 }
 
