@@ -285,10 +285,15 @@ p {
 	opacity: 0.8;
 }
 
+.container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
 .cosplay img {
 	width: 200px;
 	height: 200px;
-	float: left;
 }
 
 .modal {
