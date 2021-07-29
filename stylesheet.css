@@ -305,7 +305,14 @@ p {
 }
 
 
-/**/
+/* ↑ */
+/* modal */
+.cosplay img{
+  width:300px;
+  height:400px;
+}
+
+/* ↑ */
 .contact .fa-large{
   font-size: xxx-large;
   color: #094067;
