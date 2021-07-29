@@ -282,16 +282,14 @@ p {
 }
 
 /* Cosplay,Drow:modal */
-.cosplay img{
-  width:150px;
-  height:200px;
-}
-.cosplay ul li a:hover {
+.cosplay img :hover {
       opacity: 0.8;
     }
 
-.cosplay ul li a img {
-      width: 200px;
+.cosplay img {
+	width: 200px;
+	height: 200px;
+	float: left;
     }
 
 .modal {
@@ -329,8 +327,9 @@ p {
     }
 
 .drow img{
-  width:150px;
-  height:200px;
+  width: 200px;
+  height: 200px;
+	float: left;
 }
 
 /* Contact */
