@@ -49,7 +49,7 @@ I want to be a peaple manager.</p>
 </section>
 <section class="section section-blue js-section" data-section-name="section3">
   <div class="section-content read-book">
-    <h2>Read Books</h2>
+    <h2>Read IT Books</h2>
     <div class="slide">
 					<div class="swiper-container">
 						<div class="swiper-wrapper">
@@ -68,7 +68,7 @@ I want to be a peaple manager.</p>
 </section>
 <section class="section js-section" data-section-name="section4">
 	<div class="section-content read-comic">
-    <h2>Read Comic & Novel</h2>
+    <h2>Favorite Comic & Novel</h2>
 <div class="accordion_section s_10">
 
   <div class="accordion_area">
@@ -151,8 +151,14 @@ I want to be a peaple manager.</p>
 
 <section class="section section-blue js-section" data-section-name="section7">
  <div class="section-content fun">
-    <h2>Voice</h2>
-<p>I belonged to the broadcasting department.</br>My voice is so cuuuuute<i class="far fa-kiss-wink-heart"></i></p>
+    <h2>My Voice</h2>
+<p>I belonged to the broadcasting club.</br>My voice is so cuuuuute<i class="far fa-kiss-wink-heart"></i></p>
+
+<p class="btn"><a onclick="sound()">クリック</a></p>
+<audio id="sound" preload="auto">
+    <source src=".mp3" type="audio/mp3">
+    <source src=".wav" type="audio/wav">
+</audio>
 </div>
 </section>
 <section class="section js-section" data-section-name="section8">
@@ -225,6 +231,22 @@ $('.section-content drow .close-btn').click(function() {
         $('body,html').css('overflow-y', 'visible');
         return false
       });
+</script>
+
+<script>
+	//voice button
+(function (window, $) {
+  'use strict';
+  $.fn.useSound = function (_event, _id) {
+    var se = $(_id);
+    this.on(_event, function(){
+      se[0].currentTime = 0;
+      se[0].play();
+    });
+    return this;
+  };
+})(this, this.jQuery);
+$('.btn a').useSound('mousedown touchstart', '#sound');
 </script>
 </body>
 </html>
