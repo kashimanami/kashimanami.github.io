@@ -167,7 +167,8 @@ p {
 }
 .s_10 .accordion_one .accordion_header .header_inner {
   padding: 15px;
-　-webkit-writing-mode: vertical-rl;
+　writing-mode : vertical-rl ;
+-webkit-writing-mode : vertical-rl ; 
 }
 .s_10 .accordion_one .accordion_header .i_box {
   display: flex;
