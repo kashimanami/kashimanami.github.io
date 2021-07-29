@@ -281,7 +281,7 @@ p {
 }
 
 /* Cosplay,Drow:modal */
-.c a:hover {
+.container a:hover {
 	opacity: 0.8;
 }
 
@@ -335,6 +335,7 @@ p {
 
 
 
+
 /* Contact */
 .contact .fa-large{
 	font-size: xxx-large;
@@ -345,6 +346,7 @@ p {
 .copyright{
 	text-align: center;
 }
+
 
 /* Smart phone */
 @media screen and (max-width:480px) { 
