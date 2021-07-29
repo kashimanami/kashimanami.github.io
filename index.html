@@ -212,7 +212,7 @@
 	</script>
 	<script>
 		//modal
-		$('.cosplay ul li a').click(function() {
+		$('.container a').click(function() {
 			var imgSrc = $(this).children().attr('src');
 			$('.bigimg').children().attr('src', imgSrc);
 			$('.modal').fadeIn();
@@ -220,7 +220,7 @@
 			return false
 		});
 
-		$('.cosplay .close-btn').click(function() {
+		$('.container .close-btn').click(function() {
         		$('.modal').fadeOut();
         		$('body,html').css('overflow-y', 'visible');
         		return false
