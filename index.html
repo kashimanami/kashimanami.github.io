@@ -180,7 +180,7 @@
 	</script>
 
 	<script>
-		//swiper
+		//scroll
 		var option = {
   			section : '.js-section',
 			easing: "swing",
@@ -191,7 +191,7 @@
 		if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
 			//dead scroll
 		$(function() {
-			$.scrollify(option);
+			$.scrollify({section:".section"});
 		});
 		}
 	</script>
