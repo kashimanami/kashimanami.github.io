@@ -173,10 +173,13 @@ I want to be a peaple manager.</p>
   scrollSpeed: 600,
   scrollbars: true,
 };
-
-$(function() {
+if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+//スマホ閲覧時は自動スクロール無効
+	$(function() {
   $.scrollify(option);
 });
+}
+
 	</script>
 <script>
 // .s_10 .accordion_one
