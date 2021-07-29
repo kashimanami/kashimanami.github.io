@@ -134,7 +134,8 @@ p {
 @media screen and (max-width:480px) {
  
 	main {
-		width: 100%;
+		width: 95%;
+		margin:0px;
 	}
  
 }
