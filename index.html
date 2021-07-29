@@ -184,7 +184,7 @@
 		};
 		
 		if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
-			//スマホ閲覧時は自動スクロール無効
+			//dead scroll
 		$(function() {
 			$.scrollify(option);
 		});
@@ -194,7 +194,6 @@
 	<script>
 		//accordion
 	$(function(){
-		//.accordion_oneの中の.accordion_headerがクリックされたら
 		$('.s_10 .accordion_one .accordion_header').click(function(){
 			//クリックされた.accordion_oneの中の.accordion_headerに隣接する.accordion_innerの横幅を開いたり閉じたりする。
 			$(this).next().animate({width:'toggle'});
@@ -208,7 +207,7 @@
 	</script>
 	<script>
 		//modal
-		$('.drow ul li a').click(function() {
+		$('.cosplay ul li a').click(function() {
 			var imgSrc = $(this).children().attr('src');
 			$('.bigimg').children().attr('src', imgSrc);
 			$('.modal').fadeIn();
@@ -216,7 +215,7 @@
 			return false
 		});
 
-		$('.drow .close-btn').click(function() {
+		$('.cosplay .close-btn').click(function() {
         		$('.modal').fadeOut();
         		$('body,html').css('overflow-y', 'visible');
         		return false
