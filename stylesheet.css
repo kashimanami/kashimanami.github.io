@@ -163,7 +163,7 @@ p {
 }
 .s_10 .accordion_one .accordion_header .header_inner {
   padding: 15px;
-　writing-mode: vertical-lr;
+　writing-mode: tb-rl;
 }
 .s_10 .accordion_one .accordion_header .i_box {
   display: flex;
