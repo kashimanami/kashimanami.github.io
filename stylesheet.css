@@ -145,7 +145,7 @@ p {
   width: 20%;
   height: 300px;
   float: left;
-  background-color: #db0f2f;
+  background-color: #ff5470;
   color: #fff;
   font-size: 26px;
   font-weight: bold;
@@ -157,10 +157,10 @@ p {
   transition-duration: 0.2s;
 }
 .s_10 .accordion_one:nth-of-type(2) .accordion_header {
-  background-color: #ff9a05;
+  background-color: #fde24f;
 }
 .s_10 .accordion_one:nth-of-type(3) .accordion_header {
-  background-color: #1c85d8;
+  background-color: #00ebc7;
 }
 .s_10 .accordion_one .accordion_header:hover {
   opacity: .8;
