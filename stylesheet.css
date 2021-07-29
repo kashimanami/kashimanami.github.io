@@ -346,6 +346,7 @@ p {
 	text-align: center;
 }
 
+
 /* Smart phone */
 @media screen and (max-width:480px) { 
 	body {
