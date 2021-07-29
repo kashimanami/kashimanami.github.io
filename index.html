@@ -118,32 +118,44 @@ I want to be a peaple manager.</p>
 </section>
 
 <section class="section section-blue js-section" data-section-name="section5">
-  <div class="section-content fun">
-    <h2>Fun</h2>
-    <p>My hobby is cosplay.</br>I'm enjoying it since 5 years ago.</p>
-        <div class="slide">
-					<div class="swiper-container">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide"><img src="readable-code.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="readable-code.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="readable-code.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="readable-code.jpg" alt=""></div>
-						</div>
-						<div class="swiper-pagination"></div>
-						<div class="swiper-button-prev"></div>
-						<div class="swiper-button-next"></div>
-					</div>
-				</div>
-  </div>
+  <div class="section-content cosplay">
+    <h2>Cosplay</h2>
+    <p>I'm enjoying it since 5 years ago.</p>
+      <ul>
+　　    <li><a href=""><img src="sql-text.jpg" alt=""></a></li>
+　　    <li><a href=""><img src="sql-text.jpg" alt=""></a></li>
+　　    <li><a href=""><img src="sql-text.jpg" alt=""></a></li>
+      </ul>
+      <div class="modal">
+　　    <div class="bigimg"><img src="" alt=""></div>
+　　    <p class="close-btn"><a href="">✖</a></p>
+      </div>
   </div>
 </section>
+
 <section class="section js-section" data-section-name="section6">
+  <div class="section-content drow">
+    <h2>Drowing pictures</h2>
+    <p>iPad/color pen/color pencil/water paint/etc...</p>
+      <ul>
+　　    <li><a href=""><img src="sql-text.jpg" alt=""></a></li>
+　　    <li><a href=""><img src="sql-text.jpg" alt=""></a></li>
+　　    <li><a href=""><img src="sql-text.jpg" alt=""></a></li>
+      </ul>
+      <div class="modal">
+　　    <div class="bigimg"><img src="" alt=""></div>
+　　    <p class="close-btn"><a href="">✖</a></p>
+      </div>
+  </div>
+</section>
+
+<section class="section section-blue js-section" data-section-name="section7">
  <div class="section-content fun">
     <h2>Voice</h2>
 <p>I belonged to the broadcasting department.</br>My voice is so cuuuuute<i class="far fa-kiss-wink-heart"></i></p>
 </div>
 </section>
-<section class="section section-blue js-section" data-section-name="section7">
+<section class="section js-section" data-section-name="section8">
   <div class="section-content contact">
     <h2>Contact</h2>
 	  <a href ="https://github.com/kashimanami" target="_blank"><i class="fab fa-github fa-large"></i></a>
@@ -197,6 +209,22 @@ $(function(){
     $('.s_10 .accordion_one .accordion_header.stay').not($(this)).toggleClass("open");
   });
 });
+</script>
+<script>
+	//画像拡大
+	 $('.section-content drow ul li a').click(function() {
+        var imgSrc = $(this).children().attr('src');
+        $('.bigimg').children().attr('src', imgSrc);
+        $('.modal').fadeIn();
+        $('body,html').css('overflow-y', 'hidden');
+        return false
+      });
+
+$('.section-content drow .close-btn').click(function() {
+        $('.modal').fadeOut();
+        $('body,html').css('overflow-y', 'visible');
+        return false
+      });
 </script>
 </body>
 </html>
