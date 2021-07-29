@@ -212,19 +212,38 @@
 	</script>
 	<script>
 		//modal
-		$('.container a').click(function() {
-			var imgSrc = $(this).children().attr('src');
+		$(function() {
+	var scrollPos;//topからのスクロール位置
+	$('.container a').click(function() {
+		scrollPos = $(window).scrollTop();//topからのスクロール位置を格納
+		var imgSrc = $(this).children().attr('src');
 			$('.bigimg').children().attr('src', imgSrc);
 			$('.modal').fadeIn();
 			$('body,html').css('overflow-y', 'hidden');
 			return false
-		});
-
-		$('.container .close-btn').click(function() {
-        		$('.modal').fadeOut();
+	});
+	$('.overlay, .modal__close').click(function() {
+		$('.modal').fadeOut();
         		$('body,html').css('overflow-y', 'visible');
-        		return false
-		});
+		$(window).scrollTop(scrollPos);//元の位置までスクロール
+		return false;
+	});
+});
+		
+		//
+		//$('.container a').click(function() {
+		//	var imgSrc = $(this).children().attr('src');
+		//	$('.bigimg').children().attr('src', imgSrc);
+		//	$('.modal').fadeIn();
+		//	$('body,html').css('overflow-y', 'hidden');
+		//	return false
+		//});
+
+	//	$('.container .close-btn').click(function() {
+        //		$('.modal').fadeOut();
+        //		$('body,html').css('overflow-y', 'visible');
+        //		return false
+	//	});
 	</script>
 
 	<script>
