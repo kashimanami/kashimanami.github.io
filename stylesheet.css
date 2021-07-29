@@ -281,7 +281,7 @@ p {
 }
 
 /* Cosplay,Drow:modal */
-.cosplay img:hover {
+.cosplay a:hover {
 	opacity: 0.8;
 }
 
@@ -291,7 +291,7 @@ p {
 	flex-wrap: wrap;
 }
 
-.cosplay img {
+.container img {
 	width: 150px;
 	height: 150px;
 }
@@ -330,10 +330,7 @@ p {
       text-decoration: none;
 }
 
-.drow img{
-	width: 150px;
-	height: 150px;
-}
+
 
 /* Contact */
 .contact .fa-large{
