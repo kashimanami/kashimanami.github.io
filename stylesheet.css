@@ -385,10 +385,10 @@ p {
 	color: #094067;
 }
 
-.contact .contact-icon{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.contact-icon{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 /* Footer */
