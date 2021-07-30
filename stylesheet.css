@@ -29,10 +29,10 @@
 }
 
 .backimg-1  {
-	background-image: url('img/back-img/backimg-1.jpg');
+	background-image: url(img/back-img/backimg-1.jpg);
 }
 .backimg-2  {
-	background-image: url('img/back-img/backimg-2.jpg');
+	background-image: url(img/back-img/backimg-2.jpg);
 }
 .backimg-3  {
 	background-image: url('img/back-img/backimg-1.jpg');
