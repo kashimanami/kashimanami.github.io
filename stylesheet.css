@@ -25,7 +25,6 @@
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: center center;
-	//z-index: 1;
 }
 
 .backimg-1  {
@@ -354,10 +353,6 @@ p {
 }
 
 .bigimg {
-      //position: absolute;
-      //top: 80px;
-      //left: 0;
-      //right: 0;
       margin-top: 80px;
       margin-right: auto;
       margin-left: auto;
@@ -366,6 +361,7 @@ p {
 .bigimg img{
 	width: 500px;
 	height: 500px;
+	margin-top: 50px;
 }
 
 .close-btn {
