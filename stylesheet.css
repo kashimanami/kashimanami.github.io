@@ -1,13 +1,9 @@
 @CHARSET "UTF-8";
 
+/* section */
 .section {
 	width: 100%;
 	height: 800px;
-	background-color: #fffffe;
-}
-
-.section-blue{
-	background-color: #f2f4f6;
 }
 
 .section-content {
@@ -18,6 +14,7 @@
 	display: table;
 }
 
+/* parallax */
 .parallax {
 	position: relative;
 	min-height: 100%;
@@ -59,6 +56,8 @@
 	}
 }
 
+
+/* Read Comics */
 .read-comic{
 	max-width: none;
 	display: unset;
@@ -384,6 +383,10 @@ p {
 .contact .fa-large{
 	font-size: xxx-large;
 	color: #094067;
+}
+
+.contact .fa-large:hover{
+	color: #00ebc7;
 }
 
 .contact-icon{
