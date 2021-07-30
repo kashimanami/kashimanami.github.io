@@ -391,6 +391,10 @@ p {
 	align-items: center;
 }
 
+.contact-icon a{
+	margin: 10px;
+}
+
 /* Footer */
 .copyright{
 	text-align: center;
