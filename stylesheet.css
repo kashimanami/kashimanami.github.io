@@ -237,14 +237,6 @@ p {
     padding: 10px 25px;
     min-height: 65px;
   }
-  .timeline-article .content-left:before {
-    content: "\f0d9";
-    right: auto;
-    left: -8px;
-  }
-  .timeline-article .content-right:before {
-    display: none;
-  }
 }
 @media only screen and (max-width: 400px) {
   .timeline-article p {
