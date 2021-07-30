@@ -395,6 +395,29 @@ p {
 	margin: 10px;
 }
 
+/* Voice */
+a.btn{
+  font-weight: 700;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+a.btn-malformation {
+     font-size: 1rem;
+    padding: 2rem 3rem;
+    color: #00214d;
+    border-radius: 100% 80px / 80px 80%;
+    background-color: #00ebc7;
+}
+
+a.btn-malformation:hover {
+  color: #fff;
+  border-radius: 60% 80% / 100% 80%;
+}
+
 /* Footer */
 .copyright{
 	text-align: center;
