@@ -11,7 +11,7 @@
 }
 
 .section-content {
-	max-width: 300px;
+	max-width: 310px;
 	margin: 0 auto;
 	padding: 40px 60px;
 	text-align: center;
@@ -339,6 +339,7 @@ p {
 .container img {
 	width: 150px;
 	height: 150px;
+	margin: 2px;
 }
 
 .modal {
