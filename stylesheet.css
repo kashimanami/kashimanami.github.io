@@ -101,8 +101,8 @@ p {
 #conference-timeline .conference-center-line {
   position: absolute;
   width: 3px;
-  height: 85%;
-  top: 50px;
+  height: 90%;
+  top: 30px;
   left: 50%;
   margin-left: -2px;
   background: #00214d;
