@@ -172,16 +172,6 @@ p {
   font-family: "FontAwesome 5 Free";
   color: #fff;
 }
-.timeline-article .content-left:before {
-  content: "\f0da";
-  font-family: "FontAwesome 5 Free";
-  right: -8px;
-}
-.timeline-article .content-right:before {
-  content: "\f0d9";
-  font-family: "FontAwesome 5 Free";
-  left: -8px;
-}
 .timeline-article .meta-date {
   position: absolute;
   top: 0;
