@@ -1,4 +1,17 @@
 window.addEventListener('DOMContentLoaded', function(){
+	
+	//history :slidein
+	$(window).scroll(function (){
+		$('.slidein').each(function(){
+			var elemPos = $(this).offset().top,
+			scroll = $(window).scrollTop(),
+			windowHeight = $(window).height();
+			if (scroll > elemPos - windowHeight + 150){
+				$(this).addClass('scrollin');
+			}
+		});
+	});
+	
 	//it-book :swiper
 	var swiper = new Swiper('.swiper-container', {
 		navigation: {
@@ -12,6 +25,17 @@ window.addEventListener('DOMContentLoaded', function(){
 		},
 	});
 
+	//comics :accordion
+	$(function(){
+		$('.s_10 .accordion_one .accordion_header').click(function(){
+			$(this).next().animate({width:'toggle'});
+			$(this).toggleClass("open");
+			$('.s_10 .accordion_one .accordion_header').not($(this)).next().animate({width:'hide'});
+			$('.s_10 .accordion_one .accordion_header').not($(this)).removeClass("open");
+			$('.s_10 .accordion_one .accordion_header.stay').not($(this)).toggleClass("open");
+		});
+	});
+	
 	//cosplay pictures :parallax
 	var parallaxBkImg = function(){
 		$(window).on('load resize', function() {
@@ -47,17 +71,6 @@ window.addEventListener('DOMContentLoaded', function(){
 			$('body,html').css('overflow-y', 'visible');
 			$(window).scrollTop(scrollPos);
 			return false;
-		});
-	});
-
-	//comics :accordion
-	$(function(){
-		$('.s_10 .accordion_one .accordion_header').click(function(){
-			$(this).next().animate({width:'toggle'});
-			$(this).toggleClass("open");
-			$('.s_10 .accordion_one .accordion_header').not($(this)).next().animate({width:'hide'});
-			$('.s_10 .accordion_one .accordion_header').not($(this)).removeClass("open");
-			$('.s_10 .accordion_one .accordion_header.stay').not($(this)).toggleClass("open");
 		});
 	});
 
@@ -117,15 +130,4 @@ window.addEventListener('DOMContentLoaded', function(){
 		}
 	});
 
-	//history :slidein
-	$(window).scroll(function (){
-		$('.slidein').each(function(){
-			var elemPos = $(this).offset().top,
-			scroll = $(window).scrollTop(),
-			windowHeight = $(window).height();
-			if (scroll > elemPos - windowHeight + 150){
-				$(this).addClass('scrollin');
-			}
-		});
-	});
 });
