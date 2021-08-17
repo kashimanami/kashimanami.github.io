@@ -1,11 +1,10 @@
 @CHARSET "UTF-8";
 
-/* Section */
+/*===section===*/
 .section {
 	width: 100%;
 	height: fit-content;
 }
-
 .section-content {
 	max-width: 310px;
 	margin: 0 auto;
@@ -13,21 +12,17 @@
 	text-align: center;
 	display: table;
 }
-
 h2 {
 	color: #00214d;
 }
-
 h3 {
 	color: #00214d;
 }
-
 p {
 	color: #00214d;
 }
 
-
-/* Parallax */
+/*---parallax---*/
 .parallax {
 	position: relative;
 	min-height: 800px;
@@ -36,7 +31,6 @@ p {
 	background-repeat: no-repeat;
 	background-position: center center;
 }
-
 .backimg-1  {
 	background-image: url('img/back-img/backimg-1.jpg');
 }
@@ -61,7 +55,6 @@ p {
 .backimg-8  {
 	background-image: url('img/back-img/backimg-2.jpg');
 }
-
 @media screen and (max-width: 736px) {
 	.cd-fixed-bg {
 		background-size: cover;
@@ -69,7 +62,10 @@ p {
 	}
 }
 
-/* Introduce */
+
+
+/*===introduce===*/
+/*---fadein---*/
 @keyframes fadein{
 	0%{
 		opacity: 0;
@@ -87,7 +83,7 @@ p {
 	animation-timing-function:ease-in-out;
 	color: #00214d;
 }
-/* Contact */
+/*---contact---*/
 .contact-box{
 	margin-top: 100px;
 }
@@ -112,13 +108,14 @@ p {
 
 
 
-/* History */
+/*===history===*/
 .history .fa-large{
 	font-size: x-large;
 	color: #094067;
 	margin-left: 5px;
 }
-/*timeline*/
+
+/*---timeline---*/
 #conference-timeline {
 	position: relative;
 	max-width: 920px;
@@ -189,11 +186,9 @@ p {
 	line-height: 24px;
 	position: relative;
 }
-
 .timeline-article .ability-icon i{
 	font-size: 30px;
 }
-
 .timeline-article p span.article-number {
 	position: absolute;
 	font-size: 40px;
@@ -201,25 +196,6 @@ p {
 	left: -60px;
 	color: #00ebc7;
 }
-/* slidein */
-.slidein {
-    opacity: 0;
-    transform: translate(0,0);
-    transition: all 1.0s;
-}
-.slidein-left{
-      transform: translate(-100%,0);
-}
-
-.slidein-right{
-      transform: translate(100%,0);
-}
-
-.scrollin{
-    transform: translate(0, 0)!important;
-    opacity: 1!important;
-}
-/* -- */
 .timeline-article .content-left-container {
   float: left;
 }
@@ -259,9 +235,6 @@ p {
   font-size: 15px;
   line-height: 10px;
 }
-/*===== // Vertical Timeline =====*/
-
-/*===== Resonsive Vertical Timeline =====*/
 @media only screen and (max-width: 830px) {
   #conference-timeline .timeline-start,
   #conference-timeline .timeline-end {
@@ -298,12 +271,32 @@ p {
   }
   .timeline-article p span.article-number {
     display: none;
-  }
-  
+  }  
 }
-/*===== // Resonsive Vertical Timeline =====*/
 
-/* Read IT Books */
+/*---slidein---*/
+.slidein {
+    opacity: 0;
+    transform: translate(0,0);
+    transition: all 1.0s;
+}
+.slidein-left{
+      transform: translate(-100%,0);
+}
+
+.slidein-right{
+      transform: translate(100%,0);
+}
+
+.scrollin{
+    transform: translate(0, 0)!important;
+    opacity: 1!important;
+}
+
+
+
+/*===IT books===*/
+/*---swiper---*/
 .read-book .slide{
 	width: 400px;
 	height: 400px;
@@ -315,21 +308,19 @@ p {
 	height: 400px
 	margin: auto;
 }
+/*---swiper---*/
 .swiper-slide {
 	height: 450px;
 }
 .read-book .swiper-pagination {
 	background-image: none!important;
 }
-
 .read-book .swiper-pagination{
 	bottom: -5px!important;
 }
-
 .swiper-button-prev {
 	background-image: none!important;
 }
-
 .swiper-button-prev:after {
 	content: ''!important;
 	display: bloc!importantk;
@@ -343,11 +334,9 @@ p {
 	top: 11px!important;
 	left: 13px!important;
 }
-
 .swiper-button-next {
 	background-image: none;
 }
-
 .swiper-button-next:after {
 	content: ''!important;
 	display: block!important;
@@ -361,18 +350,19 @@ p {
 	top: 11px!important;
 	right: 15px!important;
 }
-
 .swiper-pagination-bullet-active{
 	background:#00ebc7!important;
 }
 
 
-/* Favorite comics */
+
+/*===comics===*/
 .read-comic{
 	max-width: none;
 	display: unset;
 }
 
+/*---accordion---*/
 .accordion_section{
 	z-index: 0;
 	margin-top: 50px;
@@ -554,23 +544,22 @@ p {
 	}
 }
 
-/* Cosplay,Drow pictures */
+/*===cosplay,pictures===*/
 .container a:hover {
 	opacity: 0.8;
 }
-
 .container{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 }
-
 .container img {
 	width: 150px;
 	height: 150px;
 	margin: 2px;
 }
 
+/*---modal---*/
 .modal {
       position: fixed;
       top: 0;
@@ -581,19 +570,16 @@ p {
       display: none;
       z-index: 2;
 }
-
 .bigimg {
       margin-top: 80px;
       margin-right: auto;
       margin-left: auto;
 }
-
 .bigimg img{
 	width: 500px;
 	height: 500px;
 	margin-top: 50px;
 }
-
 .close-btn {
       color: #fff;
       font-size: 40px;
@@ -601,14 +587,13 @@ p {
       right: 20px;
       top: 0;
 }
-
 .close-btn a {
       color: #fff;
       text-decoration: none;
 }
 
 
-/* My Voice */
+/*===voice===*/
 a.btn{
 	font-weight: 700;
 	display: inline-block;
@@ -632,13 +617,7 @@ a.btn-malformation:hover {
 	border-radius: 60% 80% / 100% 80%;
 }
 
-/* Footer */
-.copyright{
-	text-align: center;
-}
-
-
-/* For Smart phone */
+/*===for Smart phone===*/
 @media screen and (max-width:480px) { 
 	body {
 		width: fit-content;
