@@ -310,7 +310,7 @@ p {
 }
 /*---swiper---*/
 .swiper-slide {
-	height: 450px;
+	height: 450px!important;
 }
 .read-book .swiper-pagination {
 	background-image: none!important;
