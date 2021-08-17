@@ -121,7 +121,7 @@ var syncerSounds = {
 
 //history fadein
 //ウィンドウの高さを取得する
-var window_h = $(window).height();
+var window_h = window.innerHeight ? window.innerHeight: $(window).height();
 //スクロールイベント
 $(window).on("scroll", function() {  
 	//スクロールの位置を取得する
