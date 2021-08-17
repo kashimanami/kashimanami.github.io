@@ -1,3 +1,4 @@
+//swiper
 window.addEventListener('DOMContentLoaded', function(){
 		var swiper = new Swiper('.swiper-container', {
 			navigation: {
@@ -11,26 +12,25 @@ window.addEventListener('DOMContentLoaded', function(){
 			},
 		});
 
-
-			var parallaxBkImg = function(){
-				$(window).on('load resize', function() {
-					$(window).on('load scroll', function(){
-						var $winTop = $(window).scrollTop();
-						var $target = $('.cd-fixed-bg');
-						var $winWidth = $(window).width();
-						if($winWidth < 736) {
-							$target.each(function(index){
-								var $position = $winTop - $target.eq(index).offset().top;
-								if($winTop > $target.eq(index).offset().top - 800) {
-									$target.eq(index).css({
-										'background-position-y': $position * .4
-									});
-								}
-							});
-						}
-					});
+		var parallaxBkImg = function(){
+			$(window).on('load resize', function() {
+				$(window).on('load scroll', function(){
+					var $winTop = $(window).scrollTop();
+					var $target = $('.cd-fixed-bg');
+					var $winWidth = $(window).width();
+					if($winWidth < 736) {
+						$target.each(function(index){
+							var $position = $winTop - $target.eq(index).offset().top;
+							if($winTop > $target.eq(index).offset().top - 800) {
+								$target.eq(index).css({
+									'background-position-y': $position * .4
+								});
+							}
+						});
+					}
 				});
-			}();
+			});
+		}();
 
 	$(function(){
 		$('.s_10 .accordion_one .accordion_header').click(function(){
@@ -42,56 +42,56 @@ window.addEventListener('DOMContentLoaded', function(){
 		});
 	});
 
-		$(function() {
-			var scrollPos;
-			$('.container a').click(function() {
-				var scrollPos = $(window).scrollTop();
-				var imgSrc = $(this).children().attr('src');
-				$('.bigimg').children().attr('src', imgSrc);
-				$('.modal').fadeIn();
-				$('body,html').css('overflow-y', 'hidden');
-				return false
-			});
-			$('.close-btn').click(function() {
-				$('.modal').fadeOut();
-				$('body,html').css('overflow-y', 'visible');
-				$(window).scrollTop(scrollPos);
-				return false;
-			});
+	$(function() {
+		var scrollPos;
+		$('.container a').click(function() {
+			var scrollPos = $(window).scrollTop();
+			var imgSrc = $(this).children().attr('src');
+			$('.bigimg').children().attr('src', imgSrc);
+			$('.modal').fadeIn();
+			$('body,html').css('overflow-y', 'hidden');
+			return false
+		});
+		$('.close-btn').click(function() {
+			$('.modal').fadeOut();
+			$('body,html').css('overflow-y', 'visible');
+			$(window).scrollTop(scrollPos);
+			return false;
 		});
 	});
+});
 	
 	// voice
-	var syncerSounds = {
-				flag: {} ,currentTime: null ,
-			} ;
-	(function(){
-			var setClass = 'sounds' ;// ボタン要素のクラス名
-			var setDir = 'voice/' ;// 音声ファイルがあるフォルダ(最後は[/])
-			var setStopButtonId = 'stop-button-syncer' ;// 停止ボタンに付けるID
-			// クラス名が付いた要素を取得する
-			var sounds = document.getElementsByClassName( setClass ) ;
-			// 全ての要素にクリックイベントを設定する
-			for( var i=0,l=sounds.length ; l>i ; i++ ){
-				// クリックイベントの設定
-				sounds[i].onclick = function(){
-					// ファイル名の取得
-					var file = this.getAttribute( 'data-file' ) ;
-					// 一度生成したエレメントは生成しない
-					if( typeof( syncerSounds.flag[ file ] )=="undefined" || syncerSounds.flag[ file ] != 1 ){
-						// 生成するエレメントの調整
-						var audio = document.createElement( 'audio' ) ;
-						// エレメントのIDを指定
-						audio.id = file ;
-						// ブラウザが[.mp3]に対応している場合は[.mp3]を読み込む
-						if( audio.canPlayType( 'audio/mp3' ) ){
-							audio.src = setDir + file + '.mp3' ;
-					}
-					// ブラウザが[.wav]に対応している場合は[.wav]を読み込む
-					else if( audio.canPlayType( 'audio/wav' ) ){
-						audio.src = setDir + file + '.wav' ;
-					}
-					// [audio]を生成する
+var syncerSounds = {
+	flag: {} ,currentTime: null ,
+} ;
+(function(){
+	var setClass = 'sounds' ;// ボタン要素のクラス名
+	var setDir = 'voice/' ;// 音声ファイルがあるフォルダ(最後は[/])
+	var setStopButtonId = 'stop-button-syncer' ;// 停止ボタンに付けるID
+	// クラス名が付いた要素を取得する
+	var sounds = document.getElementsByClassName( setClass ) ;
+	// 全ての要素にクリックイベントを設定する
+	for( var i=0,l=sounds.length ; l>i ; i++ ){
+		// クリックイベントの設定
+		sounds[i].onclick = function(){
+			// ファイル名の取得
+			var file = this.getAttribute( 'data-file' ) ;
+			// 一度生成したエレメントは生成しない
+			if( typeof( syncerSounds.flag[ file ] )=="undefined" || syncerSounds.flag[ file ] != 1 ){
+				// 生成するエレメントの調整
+				var audio = document.createElement( 'audio' ) ;
+				// エレメントのIDを指定
+				audio.id = file ;
+				// ブラウザが[.mp3]に対応している場合は[.mp3]を読み込む
+				if( audio.canPlayType( 'audio/mp3' ) ){
+					audio.src = setDir + file + '.mp3' ;
+				}
+				// ブラウザが[.wav]に対応している場合は[.wav]を読み込む
+				else if( audio.canPlayType( 'audio/wav' ) ){
+					audio.src = setDir + file + '.wav' ;
+				}
+				// [audio]を生成する
 					document.body.appendChild( audio ) ;
 				}
 				// 初回再生以外だったら音声ファイルを巻き戻す
