@@ -69,6 +69,10 @@ p {
 	}
 }
 
+/* Introduce */
+.introduce-box{
+	background-color: #fff;
+}
 
 /* History */
 .history .fa-large{
