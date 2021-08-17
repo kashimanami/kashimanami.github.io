@@ -70,20 +70,18 @@ p {
 }
 
 /* Introduce */
-.introduce-box {
- 	opacity: 0;
-	transform:translateY(-10px); 
-	animation: fadein-bottom 1.5s 0 ease-out forwards;
+@keyframes fadein{
+    0%{
+        background-color: red;
+    }
+    100%{
+        background-color: none;
+    }
 }
-@keyframes fadein-bottom {
-   from {
-      opacity: 0;
-      transform: translateY(-10px);
-   }
-   to {
-      opacity: 1;
-      transform: translateY(0);
-   }
+.introduce-box{
+    animation-name: fadein;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 /* History */
