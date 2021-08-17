@@ -1,4 +1,27 @@
 window.addEventListener('DOMContentLoaded', function(){
+	//hover for smart phone
+	$(function () {
+		var userAgent = navigator.userAgent;
+		var item = $("a").add("button");
+		if (userAgent.indexOf("iPhone") >= 0 || userAgent.indexOf("iPad") >= 0 || userAgent.indexOf("Android") >= 0) {
+			item.on("touchstart", function () {
+				$(this).addClass("hover");
+			});
+			item.on("touchend", function () {
+				$(this).removeClass("hover");
+			});
+		} else {
+			item.hover(
+				function () {
+					$(this).addClass("hover");
+				},
+				function () {
+					$(this).removeClass("hover");
+				}
+			);
+		}
+	});
+	
 	//section :parallax
 	var parallaxBkImg = function(){
 		$(window).on('load resize', function() {
