@@ -563,6 +563,17 @@ p {
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
 }
+@media screen and (max-width:480px) { 
+	.container img {
+		width: 150px;
+		height: 150px;
+		margin: 2px;
+	}
+	.container img:hover {
+		-webkit-filter: none;
+		filter: none;
+	}
+}
 
 /*---modal---*/
 .modal {
