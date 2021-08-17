@@ -72,16 +72,18 @@ p {
 /* Introduce */
 @keyframes fadein{
     0%{
-        background-color: red;
+        opacity: 0;
+	transform: translateY(-20px);
     }
     100%{
-        background-color: none;
+        opacity: 1;
+	transform: translateY(0);
     }
 }
 .introduce-box{
     animation-name: fadein;
     animation-duration: 2s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
 }
 
 /* History */
