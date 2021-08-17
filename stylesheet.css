@@ -72,14 +72,15 @@ p {
 /* Introduce */
 .introduce-box {
  	opacity: 0;
+	transform:translateY(-10px); 
 	animation: fadein-bottom 1.5s 0 ease-out forwards;
 }
 @keyframes fadein-bottom {
-   0% {
+   from {
       opacity: 0;
-      transform: translateY(20px);
+      transform: translateY(-10px);
    }
-   100% {
+   to {
       opacity: 1;
       transform: translateY(0);
    }
