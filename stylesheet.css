@@ -200,6 +200,25 @@ p {
   left: -60px;
   color: #00ebc7;
 }
+/* -------------------------------------------------- */
+.content-left-container{
+  transform:translateX(-50px);　/* 最初は元の位置より左にずらしておく */
+  opacity:0;  /* 最初は非表示にしておく */
+  transition:opacity 1s,transform 0.5s;　/* 透明度と位置を設定 */
+}
+
+.content-right-container{
+  transform:translateX(50px);　/* 最初は元の位置より右にずらしておく */
+  opacity:0;  /* 最初は非表示にしておく */
+  transition:opacity 1s,transform 0.5s;　/* 透明度と位置を設定 */
+}
+
+/* 条件を満たしたあとに追加するクラス */
+.fadein{
+  opacity:1;　/* 表示させる */
+  transform:translateX(0); /* 位置を最初の位置に戻す */
+}
+/* -------------------------------------------------- */
 .timeline-article .content-left-container {
   float: left;
 }
