@@ -118,20 +118,13 @@ window.addEventListener('DOMContentLoaded', function(){
 	});
 
 	//history fadein
-	//ウィンドウの高さを取得する
-	var window_h = window.innerHeight ? window.innerHeight: $(window).height();
-	//スクロールイベント
-	$(window).on("scroll", function() {  
-		//スクロールの位置を取得する
-		var scroll_top = $(window).scrollTop();
-		$(".box").each(function() {
-			//各box要素のtopの位置を取得する
-			var elem_pos = $(this).offset().top;
-			//どのタイミングでフェードインさせるか
-			if (scroll_top >= elem_pos - window_h + 300) {
-				$(this).addClass("fadein");　//特定の位置を超えたらクラスを追加
-			} else {
-				$(this).removeClass("fadein"); //そうでない場合はクラスを削除
+	$(window).scroll(function (){
+		$('.fadein').each(function(){
+			var elemPos = $(this).offset().top,
+			scroll = $(window).scrollTop(),
+			windowHeight = $(window).height();
+			if (scroll > elemPos - windowHeight + 150){
+				$(this).addClass('scrollin');
 			}
 		});
 	});
