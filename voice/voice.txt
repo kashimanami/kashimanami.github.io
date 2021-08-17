@@ -1,0 +1,3 @@
+voice1 wav mp3
+voice2 wav mp3
+voice3 wav mp3
