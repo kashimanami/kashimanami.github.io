@@ -415,7 +415,7 @@ p {
 	right: 5%;
 	width: 40px;
 	height: 40px;
-	border: 1px solid #fff;
+	border: 1px solid #fffffe;
 	margin-top: -20px;
 	box-sizing: border-box;
 	-webkit-transform: rotate(45deg);
@@ -456,7 +456,7 @@ p {
 .s_10 .accordion_one .accordion_header .i_box .one_i:before, .s_10 .accordion_one .accordion_header .i_box .one_i:after {
 	display: flex;
 	content: '';
-	background-color: #fff;
+	background-color: #fffffe;
 	border-radius: 10px;
 	width: 18px;
 	height: 4px;
@@ -600,15 +600,18 @@ p {
 	height: 500px;
 	margin-top: 50px;
 }
+.bigimgalt{
+	color: #fffffe
+}
 .close-btn {
-      color: #fff;
+      color: #fffffe;
       font-size: 40px;
       position: absolute;
       right: 20px;
       top: 0;
 }
 .close-btn a {
-      color: #fff;
+      color: #fffffe;
       text-decoration: none;
 }
 
@@ -633,7 +636,7 @@ a.btn-malformation {
 }
 
 a.btn-malformation:hover {
-	color: #fff;
+	color: #fffffe;
 	border-radius: 60% 80% / 100% 80%;
 }
 
