@@ -117,9 +117,9 @@ window.addEventListener('DOMContentLoaded', function(){
 		}
 	});
 
-	//history fadein
+	//history :slidein
 	$(window).scroll(function (){
-		$('.fadein').each(function(){
+		$('.slidein').each(function(){
 			var elemPos = $(this).offset().top,
 			scroll = $(window).scrollTop(),
 			windowHeight = $(window).height();
