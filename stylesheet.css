@@ -568,6 +568,10 @@ p {
 		width: 150px;
 		height: 150px;
 		margin: 2px;
+		-webkit-filter: none;
+		filter: none;
+		-webkit-transition: none;
+		transition: none;
 	}
 	.container img:hover {
 		-webkit-filter: none;
