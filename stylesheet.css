@@ -95,8 +95,23 @@ p {
 .contact-box .contact-icon a{
 	margin: 10px;
 }
-
-
+.contact-box .contact-icon a:hover {
+   animation-name: swing2;
+   animation-duration: 1s;
+   animation-delay: .3s;
+}
+@-webkit-keyframes swing2 {
+   10% { -webkit-transform: rotate(-10deg); }
+   20% { -webkit-transform: rotate(8deg); }
+   30% { -webkit-transform: rotate(-5deg); }
+   40% { -webkit-transform: rotate(4deg); }
+   50% { -webkit-transform: rotate(-3deg); }
+   60% { -webkit-transform: rotate(2deg); }
+   70% { -webkit-transform: rotate(-1deg); }
+   80% { -webkit-transform: rotate(1deg); }
+   90% { -webkit-transform: rotate(-1deg); }
+   100% { -webkit-transform: rotate(0deg); }
+}
 
 /*===history===*/
 .history .fa-large{
