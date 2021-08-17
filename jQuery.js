@@ -1,4 +1,24 @@
 window.addEventListener('DOMContentLoaded', function(){
+	//section :parallax
+	var parallaxBkImg = function(){
+		$(window).on('load resize', function() {
+			$(window).on('load scroll', function(){
+				var $winTop = $(window).scrollTop();
+				var $target = $('.cd-fixed-bg');
+				var $winWidth = $(window).width();
+				if($winWidth < 736) {
+					$target.each(function(index){
+						var $position = $winTop - $target.eq(index).offset().top;
+						if($winTop > $target.eq(index).offset().top - 800) {
+							$target.eq(index).css({
+								'background-position-y': $position * .4
+							});
+						}
+					});
+				}
+			});
+		});
+	}();
 	
 	//history :slidein
 	$(window).scroll(function (){
@@ -36,32 +56,15 @@ window.addEventListener('DOMContentLoaded', function(){
 		});
 	});
 	
-	//cosplay pictures :parallax
-	var parallaxBkImg = function(){
-		$(window).on('load resize', function() {
-			$(window).on('load scroll', function(){
-				var $winTop = $(window).scrollTop();
-				var $target = $('.cd-fixed-bg');
-				var $winWidth = $(window).width();
-				if($winWidth < 736) {
-					$target.each(function(index){
-						var $position = $winTop - $target.eq(index).offset().top;
-						if($winTop > $target.eq(index).offset().top - 800) {
-							$target.eq(index).css({
-								'background-position-y': $position * .4
-							});
-						}
-					});
-				}
-			});
-		});
-	}();
+	//cosplay,pictures :modal
 	$(function() {
 		var scrollPos;
 		$('.container a').click(function() {
 			var scrollPos = $(window).scrollTop();
 			var imgSrc = $(this).children().attr('src');
+			var imgAlt = $(this).children().attr('alt');
 			$('.bigimg').children().attr('src', imgSrc);
+			$('.bigimgalt').text(imgAlt);
 			$('.modal').fadeIn();
 			$('body,html').css('overflow-y', 'hidden');
 			return false
