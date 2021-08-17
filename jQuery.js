@@ -53,11 +53,12 @@ window.addEventListener('DOMContentLoaded', function(){
 	//comics :accordion
 	$(function(){
 		$('.s_10 .accordion_one .accordion_header').click(function(){
-		$(this).next().animate({width:'toggle'});
-		$(this).toggleClass("open");
-		$('.s_10 .accordion_one .accordion_header').not($(this)).next().animate({width:'hide'});
-		$('.s_10 .accordion_one .accordion_header').not($(this)).removeClass("open");
-		$('.s_10 .accordion_one .accordion_header.stay').not($(this)).toggleClass("open");
+			$(this).next().animate({width:'toggle'});
+			$(this).toggleClass("open");
+			$('.s_10 .accordion_one .accordion_header').not($(this)).next().animate({width:'hide'});
+			$('.s_10 .accordion_one .accordion_header').not($(this)).removeClass("open");
+			$('.s_10 .accordion_one .accordion_header.stay').not($(this)).toggleClass("open");
+		});
 	});
 
 	// voice :play button
