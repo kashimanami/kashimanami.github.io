@@ -202,18 +202,23 @@ p {
 	color: #00ebc7;
 }
 /* -------------------------------------------------- */
-.fadein {
-	opacity: 0;
-	transform: translate(0,0);
-	transition: all 1.5s;
+.slidein {
+    opacity: 0;
+    transform: translate(0,0);
+    transition: all 1.0s;
 }
-.fadein-left{
-	transform: translate(-30px,0);
+.slidein-left{
+      transform: translate(-100%,0);
 }
-.fadein-right{
-	transform: translate(30px,0);
+
+.slidein-right{
+      transform: translate(100%,0);
 }
- 
+
+.scrollin{
+    transform: translate(0, 0)!important;
+    opacity: 1!important;
+}
 /* -------------------------------------------------- */
 .timeline-article .content-left-container {
   float: left;
