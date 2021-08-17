@@ -86,6 +86,30 @@ p {
 	animation-iteration-count: 1;
 	animation-timing-function:ease-in-out;
 }
+/* Contact */
+.contact-box{
+	margin-top: 100px;
+}
+
+.contact-box .fa-large{
+	font-size: xxx-large;
+	color: #094067;
+}
+
+.contact-box .fa-large:hover{
+	color: #00ebc7;
+}
+
+.contact-box .contact-icon{
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact-box .contact-icon a{
+	margin: 10px;
+}
+
+
 
 /* History */
 .history .fa-large{
@@ -583,28 +607,6 @@ a.btn-malformation:hover {
 	color: #fff;
 	border-radius: 60% 80% / 100% 80%;
 }
-
-
-/* Contact */
-.contact .fa-large{
-	font-size: xxx-large;
-	color: #094067;
-}
-
-.contact .fa-large:hover{
-	color: #00ebc7;
-}
-
-.contact-icon{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.contact-icon a{
-	margin: 10px;
-}
-
 
 /* Footer */
 .copyright{
