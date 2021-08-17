@@ -31,35 +31,25 @@ p {
 	background-repeat: no-repeat;
 	background-position: center center;
 }
-.backimg-1  {
+.backimg-1 .backimg-3 .backimg-5 .backimg-7 {
 	background-image: url('img/back-img/backimg-1.jpg');
 }
-.backimg-2  {
+.backimg-2 .backimg-4 .backimg-6 .backimg-8 {
 	background-image: url('img/back-img/backimg-2.jpg');
 }
-.backimg-3  {
-	background-image: url('img/back-img/backimg-1.jpg');
-}
-.backimg-4  {
-	background-image: url('img/back-img/backimg-2.jpg');
-}
-.backimg-5  {
-	background-image: url('img/back-img/backimg-1.jpg');
-}
-.backimg-6  {
-	background-image: url('img/back-img/backimg-2.jpg');
-}
-.backimg-7  {
-	background-image: url('img/back-img/backimg-1.jpg');
-}
-.backimg-8  {
-	background-image: url('img/back-img/backimg-2.jpg');
-}
+
 @media screen and (max-width: 736px) {
 	.cd-fixed-bg {
 		background-size: cover;
 		background-attachment: scroll;
 	}
+	.backimg-1 .backimg-3 .backimg-5 .backimg-7 {
+		background-image: url('img/back-img/backimg-1-smart.jpg');
+	}
+	.backimg-2 .backimg-4 .backimg-6 .backimg-8 {
+		background-image: url('img/back-img/backimg-2-smart.jpg');
+	}
+
 }
 
 
