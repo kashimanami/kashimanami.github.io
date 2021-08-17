@@ -201,7 +201,7 @@ p {
 	left: -60px;
 	color: #00ebc7;
 }
-/* -------------------------------------------------- */
+/* slidein */
 .slidein {
     opacity: 0;
     transform: translate(0,0);
@@ -219,7 +219,7 @@ p {
     transform: translate(0, 0)!important;
     opacity: 1!important;
 }
-/* -------------------------------------------------- */
+/* -- */
 .timeline-article .content-left-container {
   float: left;
 }
@@ -315,7 +315,9 @@ p {
 	height: 400px
 	margin: auto;
 }
-
+.swiper-slide {
+	height: 450px;
+}
 .read-book .swiper-pagination {
 	background-image: none!important;
 }
