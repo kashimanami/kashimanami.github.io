@@ -1,5 +1,5 @@
-//swiper
 window.addEventListener('DOMContentLoaded', function(){
+		//swiper
 		var swiper = new Swiper('.swiper-container', {
 			navigation: {
 				nextEl: '.swiper-button-next',
@@ -12,6 +12,7 @@ window.addEventListener('DOMContentLoaded', function(){
 			},
 		});
 
+		//parallax
 		var parallaxBkImg = function(){
 			$(window).on('load resize', function() {
 				$(window).on('load scroll', function(){
@@ -32,8 +33,9 @@ window.addEventListener('DOMContentLoaded', function(){
 			});
 		}();
 
-	$(function(){
-		$('.s_10 .accordion_one .accordion_header').click(function(){
+		//accordion
+		$(function(){
+			$('.s_10 .accordion_one .accordion_header').click(function(){
 			$(this).next().animate({width:'toggle'});
 			$(this).toggleClass("open");
 			$('.s_10 .accordion_one .accordion_header').not($(this)).next().animate({width:'hide'});
@@ -41,7 +43,7 @@ window.addEventListener('DOMContentLoaded', function(){
 			$('.s_10 .accordion_one .accordion_header.stay').not($(this)).toggleClass("open");
 		});
 	});
-
+	//img closeup
 	$(function() {
 		var scrollPos;
 		$('.container a').click(function() {
@@ -61,7 +63,7 @@ window.addEventListener('DOMContentLoaded', function(){
 	});
 });
 	
-	// voice
+	// voice button
 var syncerSounds = {
 	flag: {} ,currentTime: null ,
 } ;
@@ -117,25 +119,21 @@ var syncerSounds = {
 		}
 })() ;
 
-//fadein
+//history fadein
 //ウィンドウの高さを取得する
 var window_h = $(window).height();
-
 //スクロールイベント
-$(window).on("scroll", function() {
-  
-  //スクロールの位置を取得する
-  var scroll_top = $(window).scrollTop();
- 
-  $(".box").each(function() {
-    //各box要素のtopの位置を取得する
-    var elem_pos = $(this).offset().top;
-    
-    //どのタイミングでフェードインさせるか
-    if (scroll_top >= elem_pos - window_h + 300) {
-      $(this).addClass("fadein");　//特定の位置を超えたらクラスを追加
-    } else {
-      $(this).removeClass("fadein"); //そうでない場合はクラスを削除
-    }
-  });
+$(window).on("scroll", function() {  
+	//スクロールの位置を取得する
+	var scroll_top = $(window).scrollTop();
+	$(".box").each(function() {
+		//各box要素のtopの位置を取得する
+		var elem_pos = $(this).offset().top;
+		//どのタイミングでフェードインさせるか
+		if (scroll_top >= elem_pos - window_h + 300) {
+			$(this).addClass("fadein");　//特定の位置を超えたらクラスを追加
+		} else {
+			$(this).removeClass("fadein"); //そうでない場合はクラスを削除
+		}
+	});
 });
