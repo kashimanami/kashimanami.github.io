@@ -154,6 +154,7 @@ p {
 .timeline-article .content-right-container {
 	max-width: 44%;
 	width: 100%;
+	border: double 5px #FDE24F;
 }
 .timeline-article .timeline-author {
 	display: block;
