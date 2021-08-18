@@ -81,13 +81,13 @@ p {
 .contact-box .fa-large{
 	font-size: xx-large;
 	color: #094067;
+	position: absolute;
+	transition: 0.5s;
 }
 
 .contact-box .fa-large:hover{
 	font-size: xxx-large;
 	color: #00ebc7;
-	transition: 0.5s;
-	position: absolute;
 }
 
 .contact-box .contact-icon{
