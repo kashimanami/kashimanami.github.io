@@ -22,6 +22,10 @@ p {
 	color: #00214d;
 }
 
+.linemarker{
+	background:linear-gradient(transparent 60%, #ff5470 60%);
+}
+
 /*---parallax---*/
 .parallax {
 	position: relative;
