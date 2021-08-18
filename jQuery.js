@@ -68,6 +68,12 @@ window.addEventListener('DOMContentLoaded', function(){
 		},
 	});
 
+	$(function() {
+		var swiperAlt = $(swiper-slide).children().attr('alt');
+		$('.swiperalt').text(swiperAlt);
+	});
+
+
 	//comics :accordion
 	$(function(){
 		$('.s_10 .accordion_one .accordion_header').click(function(){
