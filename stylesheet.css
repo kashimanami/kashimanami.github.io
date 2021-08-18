@@ -351,7 +351,11 @@ p {
 .swiper-pagination-bullet-active{
 	background:#00ebc7!important;
 }
-
+.swiperalt{
+	text-align: center;
+	padding-top: 30px;
+	color: #00214d;
+}
 
 
 /*===comics===*/
