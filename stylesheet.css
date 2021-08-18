@@ -44,10 +44,10 @@ p {
 		background-attachment: scroll;
 	}
 	.backimg-1, .backimg-3, .backimg-5, .backimg-7 {
-		background-image: url('img/back-img/backimg-1-smart.jpg');
+		background-color: #fffffe;
 	}
 	.backimg-2, .backimg-4, .backimg-6, .backimg-8 {
-		background-image: url('img/back-img/backimg-2-smart.jpg');
+		background-color: #f2f4f6;
 	}
 
 }
