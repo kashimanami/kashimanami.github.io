@@ -83,6 +83,7 @@ p {
 	color: #094067;
 	position: absolute;
 	transition: 0.5s;
+	display: contents;
 }
 
 .contact-box .fa-large:hover{
