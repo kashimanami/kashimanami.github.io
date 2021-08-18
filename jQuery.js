@@ -69,7 +69,7 @@ window.addEventListener('DOMContentLoaded', function(){
 	});
 
 	$(function() {
-		var swiperAlt = $('.swiper-slide').children().attr('alt');
+		var swiperAlt = $('.swiper-slide-active').children().attr('alt');
 		$('.swiperalt').text(swiperAlt);
 	});
 
