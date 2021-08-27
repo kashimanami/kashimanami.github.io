@@ -66,6 +66,10 @@ window.addEventListener('DOMContentLoaded', function(){
 						delay: 2000,
 						disableOnInteraction: false,
 					},
+				 	pagination: {
+						el: '.swiper-pagination',
+						clickable: true,
+					},
 				});
 
 	$(function() {
