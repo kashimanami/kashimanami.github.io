@@ -56,13 +56,13 @@ window.addEventListener('DOMContentLoaded', function(){
 	});
 	
 	//it-book :bxslider
-	$(function(){
+	
 		$('.slider').bxSlider({
 			captions: true,
 			touchEnabled: true,
 			oneToOneTouch: true,
 		});
-	}
+	
 	  
 	//comics :accordion
 	$(function(){
