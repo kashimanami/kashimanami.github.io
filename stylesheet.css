@@ -306,9 +306,11 @@ p {
 }
 
 .slick-initialized.slick-slider.slick-dotted{
-	max-width: 350px;
+	max-width: 400px;
 	margin-right: auto;
 	margin-left: auto;
+	padding: 50px;
+}
 }
 
 .slide img{
