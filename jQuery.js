@@ -60,12 +60,6 @@ window.addEventListener('DOMContentLoaded', function(){
 		$('.slider').not('.slick-initialized').slick({
 			dots:true,
 		});
-		var imgAlt = $('.slick-active img').attr('alt');
-		$('.imgAlt').text(imgAlt);
-		$('.slider').children().click(function(){
-			var imgAlt = $('.slick-active img').attr('alt');
-			$('.imgAlt').text(imgAlt);
-		});
 	});
 		
 	  
