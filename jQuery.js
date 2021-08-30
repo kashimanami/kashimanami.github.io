@@ -60,7 +60,7 @@ window.addEventListener('DOMContentLoaded', function(){
 		$('.slider').bxSlider({
 			captions: true,
 			touchEnabled: true,
-			oneToOneTouch: true
+			oneToOneTouch: true,
 		});
 	
 	  
