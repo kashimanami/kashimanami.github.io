@@ -294,64 +294,22 @@ p {
 
 
 /*===IT books===*/
-/*---swiper---*/
-.read-book .slide{
-	width: 400px;
-	height: 400px;
-	margin-top: 50px;
+/*---bxslider---*/
+.bx-wrapper{
+	max-width: 410px!important;
+	margin-left: auto!important;
+	margin-right: auto!important;
+	box-shadow: none!important;
+	border: none!important;
+	backgroud-color: none!important;
 }
 
-.read-book .slide img{
-	width: 300px;
-	height: 400px;
-	margin: auto;
+.bx-wrapper img{
+	max-width: 300px!important;
+	margin-left:55px!important;
 }
-/*---swiper---*/
-.swiper-slide {
-	height: 450px!important;
-}
-.read-book .swiper-pagination {
-	background-image: none!important;
-}
-.read-book .swiper-pagination{
-	bottom: 210px!important;
-}
-.swiper-button-prev {
-	background-image: none!important;
-}
-.swiper-button-prev:after {
-	content: ''!important;
-	display: bloc!importantk;
-	width: 15px!important;
-	height: 15px!important;
-	border-top: 5px solid #00ebc7!important;
-	border-left: 5px solid #00ebc7!important;
-	-webkit-transform: rotate(-45deg)!important;
-	transform: rotate(-45deg)!important;
-	position: absolute!important;
-	top: 11px!important;
-	left: 13px!important;
-}
-.swiper-button-next {
-	background-image: none;
-}
-.swiper-button-next:after {
-	content: ''!important;
-	display: block!important;
-	width: 15px!important;
-	height: 15px!important;
-	border-top: 5px solid #00ebc7!important;
-	border-right: 5px solid #00ebc7!important;
-	-webkit-transform: rotate(45deg)!important;
-	transform: rotate(45deg)!important;
-	position: absolute!important;
-	top: 11px!important;
-	right: 15px!important;
-}
-.swiper-pagination-bullet-active{
-	background:#00ebc7!important;
-}
-.swiperalt{
+
+.slideralt{
 	text-align: center;
 	padding-top: 30px;
 	color: #00214d;
