@@ -317,11 +317,7 @@ p {
 	width: 300px;
 }
 
-.slick-next:before{
-	color: #00214d;
-}
-
-.slick-prev:before{
+.slick-arrow{
 	color: #00214d;
 }
 
