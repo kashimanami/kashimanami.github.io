@@ -317,9 +317,34 @@ p {
 	width: 300px;
 }
 
-.slick-next:before, .slick-prev:before{
-    color: #00214d;
+.slick-next:before{
+	color: #00214d;
 }
+
+.slick-prev:before{
+	color: #00214d;
+}
+
+.slick-slide .caption {
+	position: absolute;
+	bottom: 5px;
+	z-index: 2;
+	width: 260px;
+	padding: 20px;
+	margin: 0px;
+	background: rgba(0, 0, 0, .6);
+	color: #fff;
+	font-size: 14px;
+	opacity: 0;
+	transition: 0.3s ease;
+	text-align: center;
+}
+
+.slick-current .caption {
+	opacity: 1;
+	transition-delay: .5s;
+}
+
 
 /*===comics===*/
 .read-comic{
