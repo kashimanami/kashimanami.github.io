@@ -55,13 +55,11 @@ window.addEventListener('DOMContentLoaded', function(){
 		});
 	});
 	
-	//it-book :bxslider
-	jQuery(function($){
-		$('.slider').bxSlider({
-			captions: true,
-			touchEnabled: true,
-			oneToOneTouch: true
-		});
+	//it-book :slider
+	$(function(){
+		$('.slider').not('.slick-initialized').slick({
+			dots:true,
+		})
 	});
 	  
 	//comics :accordion
