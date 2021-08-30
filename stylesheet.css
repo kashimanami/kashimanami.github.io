@@ -294,7 +294,7 @@ p {
 
 
 /*===IT books===*/
-/*---bxslider---*/
+/*---slick-slider---*/
 .slick-dots {
 	position: unset!important;
 	bottom: 0px!important;
@@ -338,7 +338,6 @@ p {
 	opacity: 0;
 	transition: 0.3s ease;
 	text-align: center;
-	text-decoration: none;
 }
 
 .slick-current .caption {
