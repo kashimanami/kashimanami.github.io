@@ -55,31 +55,8 @@ window.addEventListener('DOMContentLoaded', function(){
 		});
 	});
 	
-	//it-book :swiper
-	var swiper = new Swiper('.swiper-container', 
-				{navigation: {
-					nextEl: '.swiper-button-next',
-					prevEl: '.swiper-button-prev',
-					},
-				 	loop: true,
-				 	autoplay: {
-						delay: 5000,
-						disableOnInteraction: false,
-					},
-				 	pagination: {
-						el: '.swiper-pagination',
-						clickable: true,
-					},
-				});
-
-	$(function() {
-		var swiperAlt = $('.swiper-slide-active').children().attr('alt');
-		$('.swiperalt').text(swiperAlt);
-		$('.swiper-container').children().click(function(){
-			var swiperAlt = $('.swiper-slide-active').children().attr('alt');
-			$('.swiperalt').text(swiperAlt);
-		});
-	});
+	//it-book :bxslider
+	$('.slider').bxSlider();
 
 
 	//comics :accordion
