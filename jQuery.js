@@ -56,9 +56,14 @@ window.addEventListener('DOMContentLoaded', function(){
 	});
 	
 	//it-book :bxslider
-	$('.slider').bxSlider();
-
-
+	$(function(){
+		$('.slider').bxSlider({
+			captions: true,
+			touchEnabled: true,
+			oneToOneTouch: true,
+		});
+	}
+	  
 	//comics :accordion
 	$(function(){
 		$('.s_10 .accordion_one .accordion_header').click(function(){
