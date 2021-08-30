@@ -311,6 +311,7 @@ p {
 
 .bx-wrapper .bx-caption{
 	bottom: 16px!important;
+	background: rgba(9, 64, 103, 0.75)!important;
 }
 
 /*===comics===*/
@@ -520,23 +521,7 @@ p {
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
 }
-/*
-@media screen and (max-width:480px) { 
-	.container img {
-		width: 150px;
-		height: 150px;
-		margin: 2px;
-		-webkit-filter: none;
-		filter: none;
-		-webkit-transition: none;
-		transition: none;
-	}
-	.container img:hover {
-		-webkit-filter: none;
-		filter: none;
-	}
-}
-*/
+
 /*---modal---*/
 .modal {
       position: fixed;
