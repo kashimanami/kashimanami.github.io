@@ -306,19 +306,19 @@ p {
 }
 
 .slick-initialized.slick-slider.slick-dotted{
-	max-width: 400px;
-	margin-right: auto;
-	margin-left: auto;
-	padding: 50px;
+	max-width: 400px!important;
+	margin-right: auto!important;
+	margin-left: auto!important;
+	padding: 50px!important;
 }
 
 .slide img{
-	height: 400px;
-	width: 300px;
+	height: 400px!important;
+	width: 300px!important;
 }
 
 .slick-arrow{
-	color: #00214d;
+	color: #00214d!important;
 }
 
 .slick-slide .caption {
