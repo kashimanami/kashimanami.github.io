@@ -46,30 +46,22 @@ p {
 	background-image: url('img/back-img/backimg-2.jpg');
 }
 
-/*
-@media screen and (max-width: 736px) {
+
+@media only screen and (max-width: 736px) {
 	.cd-fixed-bg {
 		background-size: cover;
 		background-attachment: scroll;
 	}
 	.backimg-1, .backimg-3, .backimg-5, .backimg-7 {
+		background-image: none;
 		background-color: #fffffe;
 	}
 	.backimg-2, .backimg-4, .backimg-6, .backimg-8 {
+		background-image: none;
 		background-color: #f2f4f6;
 	}
 
 }
-*/
-@media only screen and (max-width: 400px){
-	.backimg-1, .backimg-3, .backimg-5, .backimg-7 {
-		background-color: #fffffe;
-	}
-	.backimg-2, .backimg-4, .backimg-6, .backimg-8 {
-		background-color: #f2f4f6;
-	}
-}
-
 
 /*===introduce===*/
 /*---fadein---*/
