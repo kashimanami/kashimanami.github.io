@@ -53,10 +53,10 @@ p {
 		background-attachment: scroll;
 	}
 	.backimg-1, .backimg-3, .backimg-5, .backimg-7 {
-		background-image: url('img/back-img/backimg-3.jpg');
+		background-image: url('img/back-img/backimg-3.png');
 	}
 	.backimg-2, .backimg-4, .backimg-6, .backimg-8 {
-		background-image: url('img/back-img/backimg-4.jpg');
+		background-image: url('img/back-img/backimg-4.png');
 	}
 
 }
