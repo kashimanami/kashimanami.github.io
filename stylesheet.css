@@ -627,7 +627,7 @@ a.btn-malformation {
 
 @media only screen and (max-width: 736px) {
 	a.btn-malformation {
-		color: #FDE24F;
+		background-color: #FDE24F;
 	}
 }
 
