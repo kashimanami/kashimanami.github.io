@@ -332,6 +332,14 @@ p {
 	font-size: 40px!important;
 }
 
+@media only screen and (max-width: 736px) {
+	.slick-prev:before, .slick-next:before {
+		color: #FDE24F!important;
+	}
+}
+
+
+
 .slick-slide .caption {
 	position: absolute;
 	bottom: 5px;
@@ -615,6 +623,12 @@ a.btn-malformation {
 	border-radius: 100% 80px / 80px 80%;
 	background-color: #00ebc7;
 	margin: 10px;
+}
+
+@media only screen and (max-width: 736px) {
+	a.btn-malformation {
+		color: #FDE24F;
+	}
 }
 
 a.btn-malformation:hover {
