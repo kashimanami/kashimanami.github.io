@@ -26,6 +26,10 @@ p {
 	background:linear-gradient(transparent 60%, #ff5470 60%);
 }
 
+.linemarker-sub{
+	background:linear-gradient(transparent 60%, #fde24f 60%);
+}
+
 /*---parallax---*/
 .parallax {
 	position: relative;
