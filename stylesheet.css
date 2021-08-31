@@ -46,6 +46,7 @@ p {
 	background-image: url('img/back-img/backimg-2.jpg');
 }
 
+/*
 @media screen and (max-width: 736px) {
 	.cd-fixed-bg {
 		background-size: cover;
@@ -59,7 +60,15 @@ p {
 	}
 
 }
-
+*/
+@media only screen and (max-width: 400px){
+	.backimg-1, .backimg-3, .backimg-5, .backimg-7 {
+		background-color: #fffffe;
+	}
+	.backimg-2, .backimg-4, .backimg-6, .backimg-8 {
+		background-color: #f2f4f6;
+	}
+}
 
 
 /*===introduce===*/
@@ -273,7 +282,8 @@ p {
 		margin: 0;
 	}
 	.timeline-article p span.article-number {
-		display: none;
+		margin-left:40px;
+		opacity:0.5;
 	}  
 }
 
