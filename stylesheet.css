@@ -309,6 +309,11 @@ p {
 	text-align: center!important;
 }
 
+.slick-dots li.slick-active button:before {
+    color: #fde24f!important;
+}
+
+
 .slick-initialized.slick-slider.slick-dotted{
 	max-width: 400px!important;
 	margin-right: auto!important;
