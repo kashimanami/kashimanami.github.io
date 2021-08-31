@@ -317,8 +317,10 @@ p {
 	width: 300px!important;
 }
 
-.slick-arrow{
+.slick-prev:before, .slick-next:before {
 	color: #00214d!important;
+	opacity: 1!important;
+	font-size: 40px!important;
 }
 
 .slick-slide .caption {
