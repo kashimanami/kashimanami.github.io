@@ -23,7 +23,7 @@ p {
 }
 
 @media only screen and (max-width: 736px) {
-	.backimg-1 h2, .backimg-1 h3, .backimg-1 p, .backimg-3 h2, .backimg-3 h3, .backimg-3 p,.backimg-5 h2, .backimg-5 h3, .backimg-5 p,.backimg-7 h2, .backimg-7 h3, .backimg-7 p, {
+	.backimg-1 h2, .backimg-1 h3, .backimg-1 p, .backimg-3 h2, .backimg-3 h3, .backimg-3 p,.backimg-5 h2, .backimg-5 h3, .backimg-5 p,.backimg-7 h2, .backimg-7 h3, .backimg-7 p {
 		color: #fffffe;
 	}
 }
@@ -92,6 +92,7 @@ p {
 		padding-top: 35px;
 		border: inset 5px rgba(255,84,112);
 		padding-bottom: 40px;
+		color: #fffffe;
 	}
 }
 	
@@ -109,7 +110,11 @@ p {
 	transition: 0.5s;
 	display: contents;
 }
-
+@media only screen and (max-width: 736px) {
+	.contact-box .fa-large{
+		color: #fffffe;
+	}
+}
 .contact-box .fa-large:hover{
 	font-size: xxx-large;
 	color: #00ebc7;
@@ -346,7 +351,6 @@ p {
 .slick-prev:before, .slick-next:before {
 	color: #00214d!important;
 	opacity: 1!important;
-	font-size: 40px!important;
 }
 
 @media only screen and (max-width: 736px) {
