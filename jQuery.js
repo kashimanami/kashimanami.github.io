@@ -59,7 +59,7 @@ window.addEventListener('DOMContentLoaded', function(){
 	$(function(){
 		$('.slider').not('.slick-initialized').slick({
 			dots:true,
-			autoplay: false,
+			autoplay: true,
 			autoplaySpeed: 3000,
 		});
 	});
