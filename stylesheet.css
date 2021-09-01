@@ -22,6 +22,12 @@ p {
 	color: #00214d;
 }
 
+@media only screen and (max-width: 736px) {
+	.backimg-1 h2, .backimg-1 h3, .backimg-1 p, .backimg-3 h2, .backimg-3 h3, .backimg-3 p,.backimg-5 h2, .backimg-5 h3, .backimg-5 p,.backimg-7 h2, .backimg-7 h3, .backimg-7 p, {
+		color: #fffffe;
+	}
+}
+
 .linemarker{
 	background:linear-gradient(transparent 60%, #ff5470 60%);
 }
@@ -48,15 +54,13 @@ p {
 
 
 @media only screen and (max-width: 736px) {
-	.cd-fixed-bg {
-		background-size: cover;
-		background-attachment: scroll;
-	}
 	.backimg-1, .backimg-3, .backimg-5, .backimg-7 {
-		background-image: url('img/back-img/backimg-3.png');
+		background-image: none;
+		background-color: #00214d;
 	}
 	.backimg-2, .backimg-4, .backimg-6, .backimg-8 {
-		background-image: url('img/back-img/backimg-4.png');
+		background-image: none;
+		background-color: #fffffe;
 	}
 
 }
