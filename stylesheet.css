@@ -33,7 +33,7 @@ p {
 }
 
 .linemarker-sub{
-	background:linear-gradient(transparent 60%, #fde24f 60%);
+	background:linear-gradient(transparent 60%, rgb(253, 226, 79, 0.75) 60%);
 }
 
 /*---parallax---*/
