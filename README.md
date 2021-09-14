@@ -2,5 +2,5 @@
 ---
 Hello👋  
 I introduce myself.  
-After, plus my voice.
+After, plus my voice.  
 This site is responsive design, so I reccomend you visiting this for 💻 and 📱
